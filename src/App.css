@@ -1,0 +1,166 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 32px 24px 24px 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #2d6cdf;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.sensor {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+}
+
+.sensor strong {
+  color: #e90505;
+  font-size: 1.3em;
+}
+
+.relays {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+
+.relay-card {
+  background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(60, 60, 120, 0.10);
+  padding: 44px 20px;
+  min-width: 300px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+.relay-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(36, 36, 158, 0.18);
+}
+
+.relay-card h3 {
+  margin: 0 0 18px 0;
+  color: #2d6cdf;
+  font-size: 1.15em;
+  letter-spacing: 0.5px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+}
+
+button.on {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  color: #1b4d3e;
+}
+
+button.off {
+  background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+  color: #fff;
+}
+
+.timer {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  border: 1px solid #b0bec5;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+  border: 1.5px solid #2d6cdf;
+  background: #e3f0ff;
+}
+.app {
+  text-align: center;
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.sensor {
+  margin-bottom: 2rem;
+}
+
+.relays {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.relay-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 2px 2px 10px #eee;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.on {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.off {
+  background-color: #f44336;
+  color: white;
+}
+
+input {
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.timer, .routine {
+  margin-top: 10px;
+}
